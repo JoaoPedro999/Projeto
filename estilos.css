@@ -1,36 +1,44 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: #E3DFD6;
-    
-  }
-  *{margin: 0; padding: 0;}
-  
-  body{
-    font-family: 'Vollkorn SC';font-size: 22px;
-  }
-  
-  #upperbar {
-  
+    background-color: #E1DAD4;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vollkorn SC';
+    font-size: 22px;
+}
+
+#upperbar {
+    display: flex;
     background-color: #C7C3B9;
     height: 100px;
-    
-  }
-  .logo2 {
-   float: left; 
- text-align: center;
- margin-left: 900px;
-  }
-  body {
+
+}
+
+.logo2 {
+    float: left;
+    text-align: center;
+    margin-left: 900px;
+}
+
+body {
     font-size: 14px;
-  }
-  
-  #logo {
-  
-    height:40px;
-    
-  }
-  menu.absolute {
+}
+
+#logo {
+
+    height: 40px;
+
+}
+
+menu.absolute {
     position: absolute;
     top: 80px;
     right: 0;
@@ -38,29 +46,34 @@ html {
     width: 200px;
     height: 100px;
     border: 3px solid #C7C3B9;
-  }
-  *{
-    margin:0px;
+}
+
+* {
+    margin: 0px;
     padding: 0px;
-  }
-  .menu{
-    width:100%;
+}
+
+.menu {
+    width: 100%;
     height: 50px;
-    background-color: #C7C3B9 ;
+    background-color: #C7C3B9;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     text-align: right;
-  }
-  .menu ul{
+}
+
+.menu ul {
     list-style: none;
     position: relative;
     text-align: right;
-  }
-  .menu ul li{
+}
+
+.menu ul li {
     width: 100px;
     float: right;
-  }
-  .menu a{
+}
+
+.menu a {
     padding: 15px;
     display: block;
     text-decoration: none;
@@ -68,74 +81,96 @@ html {
     background-color: #C7C3B9;
     color: #000000;
     text-align: right;
-  }
-  .menu ul ul{
+}
+
+.menu ul ul {
     position: absolute;
-   visibility: hidden;
-  }
-  .menu ul li:hover ul{
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
     visibility: visible;
-  }
-  .menu a:hover{
+}
+
+.menu a:hover {
     background-color: #000;
     color: #ffffff;
-  }
-  .menu ul ul li{
-    float:none;
-    border-bottom: solid 1px #C7C3B9; 
-  } 
-  /**/
-  .espacamento{
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #C7C3B9;
+}
+
+/**/
+.espacamento {
     width: 100%;
-    height: 30px;
+    height: 100px;
     background-color: #C7C3B9;
-  }
-  .botao{
+}
+
+.botao {
     background-color: #C7C3B9;
     width: 100%;
     height: 20px;
-  }
-  .consultas{
-    top:700px;
-  }
-  
-  /**/
-  
-  main{
+}
+
+.consultas {
+    top: 700px;
+}
+
+/**/
+
+main {
     display: inline-block;
     margin-left: 30px;
-    font-family: 'Vollkorn SC';font-size: 22px;
-  }
-  button{
-    width: 120px;
-    height: 30px;
-    font-family: 'Vollkorn SC';font-size: 22px;
-    background-color: #E3DFD6;
-    border: 0px;
-  }
-  button:hover{
-    width: 120px;
-    height: 30px;
-    font-family: 'Vollkorn SC';font-size: 22px;
-    background-color: #C7C3B9; 
-    border: 0px; 
-    border-radius: 10px;
-  }
+    font-family: 'Vollkorn SC';
+    font-size: 22px;
+    width: 900px;
+}
 
-  #consultas-container{
+button {
+    width: 120px;
+    height: 30px;
+    font-family: 'Vollkorn SC';
+    font-size: 22px;
+    background-color: #E1DAD4;
+    border: 0px;
+}
+
+button:hover {
+    width: 120px;
+    height: 30px;
+    font-family: 'Vollkorn SC';
+    font-size: 22px;
+    background-color: #C7C3B9;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#consultas-container {
     margin-left: 30px;
     font-size: 24px;
-  }
-  .resultado {
+}
+
+.resultado {
     height: 50px;
     display: inline-block;
     background-color: #ffffff;
     font-size: 24px;
     border-radius: 15px;
-  }
-  .AA{
+}
+
+.AA {
     font-size: 24px;
+}
 
-  }
-  
-
+.imagem {
+    border-right: 150px solid #E1DAD4;
+    border-top: 50px solid #E1DAD4;
+    float: right;
+}
+input{
+    height: 30px;
+    width: 600px;
+}

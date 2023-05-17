@@ -1,97 +1,105 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title></title>
-  <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
 </head>
 <script>
-  function agendamento() {
-    const form = document.querySelector('form');
+    function agendamento() {
+        const form = document.querySelector('form');
 
-    const consultasContainer = document.querySelector('#consultas-container');
+        const consultasContainer = document.querySelector('#consultas-container');
 
-    let consultas = [];
+        let consultas = [];
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-      const consulta = {
-        nome: form.querySelector('#name').value,
-        cor: form.querySelector('#cor').value,
-        tamanho: form.querySelector('#tamanho').value,
-        tipo: form.querySelector('#tipo').value,
-      };
+            const consulta = {
+                nome: form.querySelector('#name').value,
+                cor: form.querySelector('#cor').value,
+                tamanho: form.querySelector('#tamanho').value,
+                tipo: form.querySelector('#tipo').value,
+            };
 
-      consultas.push(consulta);
+            consultas.push(consulta);
 
-      form.reset();
+            form.reset();
 
-      exibirConsultas();
-    });
+            exibirConsultas();
+        });
 
-    function exibirConsultas() {
+        function exibirConsultas() {
 
-      let consultasHTML = '';
+            let consultasHTML = '';
 
-      consultas.forEach((consulta) => {
-        consultasHTML += `
+            consultas.forEach((consulta) => {
+                consultasHTML += `
+                <h3>Estoque:</h3> <br>
           <div class ="resultado">
             <br><br>
-            <h3>Estoque:</h3> <br>
             <p><strong>Material:</strong> ${consulta.nome}</p>
             <p><strong>Cor:</strong> ${consulta.cor}</p>
             <p><strong>Tamanho:</strong> ${consulta.tamanho}</p>
             <p><strong>Tipo:</strong> ${consulta.tipo}</p>
           </div>
         `;
-      });
+            });
 
-      consultasContainer.innerHTML = consultasHTML;
+            consultasContainer.innerHTML = consultasHTML;
+        }
     }
-  }
 </script>
 
 <body>
-  <div class="cabecalho">
-    <div class="logo2">
-      <h1>Estoque</h1>
+    <div class="cabecalho">
+        <div class="logo2">
+            <h1>Estoque</h1>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">=</a>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="index.html">Funcionários</a></li>
+                        <li><a href="estoque.html">Estoque</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
+    <div class="imagem">
+        <img src="Logo.png">
+    </div>
+    <main> 
+        <br>
+        <h2>Registrar Estoque:</h2><br>
 
-    <nav class="menu">
-      <ul>
-        <li><a href="#">=</a>
-          <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="index.html">Funcionários</a></li>
-            <li><a href="estoque.html">Estoque</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <main>
-    <h2>Registrar Estoque:</h2>
-
-    <form onsubmit="agendamento(); return false;">
-      <label for="name">Material:</label> <br>
-      <input type="text" id="name" name="name" required><br>
-      <label for="cor">Cor:</label> <br>
-      <input type="text" id="cor" name="cor" required><br>
-      <label for="tamanho">Tamanho:</label> <br>
-      <input type="text" id="tamanho" name="tamanho" required><br>
-      <label for="tipo">Tipo:</label> <br>
-      <input type="text" id="tipo" name="tipo" required><br>
-     <br> <button type="submit">Registrar</button>
-    </form>
-  </main>
-  <br><br>
-  <div class = "espacamento">
-</div>
-  <div id="consultas-container">
-    <h3>Estoque:</h3>
-  </div>
+        <form onsubmit="agendamento(); return false;">
+            <label for="name">Material:</label> <br>
+            <input type="text" id="name" name="name" required><br>
+            <br>
+            <label for="cor">Cor:</label> <br>
+            <input type="text" id="cor" name="cor" required><br>
+            <br>
+            <label for="tamanho">Tamanho:</label> <br>
+            <input type="text" id="tamanho" name="tamanho" required><br>
+            <br>
+            <label for="tipo">Tipo:</label> <br>
+            <input type="text" id="tipo" name="tipo" required><br>
+            <br>
+            <br> <button type="submit">Registrar</button>
+        </form>
+    </main>
+    <br><br>
+    <div class="espacamento">
+    </div>
+    <div id="consultas-container">
+        <h3>Estoque:</h3>
+    </div>
 </body>
 
 </html>
