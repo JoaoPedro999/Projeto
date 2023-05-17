@@ -7,18 +7,19 @@ html {
   *{margin: 0; padding: 0;}
   
   body{
-  font-family: arial, helvetica, sans-serif;
-  font-size: 12px;
+    font-family: 'Vollkorn SC';font-size: 22px;
   }
   
   #upperbar {
   
     background-color: #C7C3B9;
-    height: 100000px;
+    height: 100px;
     
   }
   .logo2 {
    float: left; 
+ text-align: center;
+ margin-left: 900px;
   }
   body {
     font-size: 14px;
@@ -89,11 +90,6 @@ html {
     height: 30px;
     background-color: #C7C3B9;
   }
-  .rodape{
-    background-color: #C7C3B9;
-    width: 200%;
-    height: px;
-  }
   .botao{
     background-color: #C7C3B9;
     width: 100%;
@@ -108,12 +104,26 @@ html {
   main{
     display: inline-block;
     margin-left: 30px;
+    font-family: 'Vollkorn SC';font-size: 22px;
   }
   button{
     width: 120px;
     height: 30px;
+    font-family: 'Vollkorn SC';font-size: 22px;
   }
   #consultas-container{
     margin-left: 30px;
+    font-size: 24px;
   }
+  .resultado {
+    display: inline-block;
+    background-color: #ffffff;
+    font-size: 24px;
+    border-radius: 15px;
+  }
+  .AA{
+    font-size: 24px;
+
+  }
+  
 

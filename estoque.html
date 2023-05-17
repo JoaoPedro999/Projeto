@@ -8,21 +8,15 @@
 </head>
 <script>
   function agendamento() {
-    // Seleciona o formulário
     const form = document.querySelector('form');
 
-    // Seleciona o elemento para exibir as consultas agendadas
     const consultasContainer = document.querySelector('#consultas-container');
 
-    // Cria uma matriz vazia para armazenar as consultas agendadas
     let consultas = [];
 
-    // Adiciona um listener para o evento de envio do formulário
     form.addEventListener('submit', (event) => {
-      // Previne o comportamento padrão de envio do formulário
       event.preventDefault();
 
-      // Cria um objeto com as informações da consulta agendada
       const consulta = {
         nome: form.querySelector('#name').value,
         cor: form.querySelector('#cor').value,
@@ -30,22 +24,17 @@
         tipo: form.querySelector('#tipo').value,
       };
 
-      // Adiciona o objeto à matriz de consultas agendadas
       consultas.push(consulta);
 
-      // Limpa o formulário para o próximo agendamento
       form.reset();
 
-      // Exibe as consultas agendadas na tela
       exibirConsultas();
     });
 
-    // Função para exibir as consultas agendadas na tela
     function exibirConsultas() {
-      // Cria uma variável para armazenar o HTML das consultas agendadas
+
       let consultasHTML = '';
 
-      // Percorre a matriz de consultas e adiciona as informações ao HTML
       consultas.forEach((consulta) => {
         consultasHTML += `
           <div class ="resultado">
@@ -59,7 +48,6 @@
         `;
       });
 
-      // Adiciona o HTML das consultas agendadas ao elemento na tela
       consultasContainer.innerHTML = consultasHTML;
     }
   }
