@@ -110,7 +110,18 @@ html {
     width: 120px;
     height: 30px;
     font-family: 'Vollkorn SC';font-size: 22px;
+    background-color: #E3DFD6;
+    border: 0px;
   }
+  button:hover{
+    width: 120px;
+    height: 30px;
+    font-family: 'Vollkorn SC';font-size: 22px;
+    background-color: #C7C3B9; 
+    border: 0px; 
+    border-radius: 10px;
+  }
+
   #consultas-container{
     margin-left: 30px;
     font-size: 24px;
