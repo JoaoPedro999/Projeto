@@ -5,25 +5,52 @@
     <meta name="viewport" content="width=device-width">
     <link href="estilo.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <div class="cabecalho">
-        <img src="logo2.png">
+        <img id="logo2" src="logo2.png" height="100px">
     </div>
 
     <div class="Estoque">
-        <h1>Estoque</h1>
+        <a id="estoc">Estoque</a> <input id="a1" onclick="audio1()" type="image" src="audio.png" width="40" height="40"></input>
+        <audio controls>
+            <source src="estoque.mp3" type="audio/mpeg">
+        </audio>
         <div class="img_est">
-          <a href="estoque.html">  <img src="estoque.png"> </a>
+            <a href="estoque.html"> <img src="estoque.jpg" width="300" height="300"> </a>
         </div>
     </div>
     <div class="Funcionarios">
-        <h1>Funcionários</h1>
+        <a id="func">Funcionários</a> <input id="a2" onclick="audio2()" type="image" src="audio.png" width="40" height="40"></input>
+        <audio controls>
+            <source src="funcionario.mp3" type="audio/mpeg">
+        </audio>
+
         <div class="img_func">
-           <a href="funcionarios.html"><img src="funcionarios.png"></a>
+            <a href="funcionarios.html"><img src="funcionarios.jpg" width="300" height="300"></a>
         </div>
     </div>
 
+    <script>
 
-<div class="rodape"></div>
+function audio1(){
+        var audio = new Audio('estoque.mp3');
+audio.play();
+}
+function audio2(){
+        var audio = new Audio('funcionario.mp3');
+audio.play();
+
+}
+    </script>
+
+    <style>
+        audio {
+
+            visibility: hidden;
+        }
+    </style>
+    <div class="rodape"></div>
 </body>
+
 </html>

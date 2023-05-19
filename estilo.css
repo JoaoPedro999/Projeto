@@ -2,15 +2,27 @@ html{
     height: 100%;
     width: 100%;
     background-color: #E1DAD4;
+    padding: 0%;
+    margin: 0%;
 }
 body{
     font-family: 'Vollkorn SC';
     font-size: 22px;
+    padding: 0%;
+    margin: 0%;
+}
+#logo2{
+    float: center;
+    position: absolute;
+    margin-left: 43%;
 }
 .cabecalho{
     display: flex;
     background-color: #C7C3B9;
     height: 100px;
+    margin: 0px;
+    border: 0px;
+
 }
 .Estoque{
     display: flex;
@@ -20,8 +32,11 @@ body{
     text-align: justify center;
     height: 500px;
     width: 400px;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 50%;
+    border: 5px solid;
+    border-color: #ad9863;
+    font-family: 'Vollkorn SC';
 }
 .Funcionarios{
     display: flex;
@@ -31,11 +46,58 @@ body{
     text-align: justify center;
     height: 500px;
     width: 400px;
-    margin-top: 100px;
-    margin-left: 20%;
+    margin-top: 200px;
+    margin-left: 25%;
+    border: 5px solid;
+    border-color: #ad9863;
+    font-family: 'Vollkorn SC';
 }
 .rodape{
     height: 60px;
     width: 100%;
     background-color: #C7C3B9;
+}
+.img_est{
+    display: flex;
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: #E1DAD4 solid 3px;
+}
+.img_func{
+    display: flex;
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: #E1DAD4 solid 3px;
+}
+#a1{
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 80%;
+}
+#a2{
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 80%;
+}
+#estoc{
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 35%;
+    font-family: 'Vollkorn SC';
+    font-size: 30px;
+}
+#func{
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 25%;
+    font-family: 'Vollkorn SC';
+    font-size: 30px;
 }
