@@ -15,7 +15,7 @@ body{
 .Estoque{
     display: flex;
     position: absolute;
-    background-color: #adadad;
+    background-color: #C7C3B9;
     font-size: 24px;
     text-align: justify center;
     height: 500px;
@@ -26,11 +26,16 @@ body{
 .Funcionarios{
     display: flex;
     position: absolute;
-    background-color: #adadad;
+    background-color: #C7C3B9;
     font-size: 24px;
     text-align: justify center;
     height: 500px;
     width: 400px;
     margin-top: 100px;
     margin-left: 20%;
+}
+.rodape{
+    height: 60px;
+    width: 100%;
+    background-color: #C7C3B9;
 }
