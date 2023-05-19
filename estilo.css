@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-color: #E1DAD4;
+}
+body{
+    font-family: 'Vollkorn SC';
+    font-size: 22px;
+}
+.cabecalho{
+    display: flex;
+    background-color: #C7C3B9;
+    height: 100px;
+}
+.Estoque{
+    display: flex;
+    position: absolute;
+    background-color: #adadad;
+    font-size: 24px;
+    text-align: justify center;
+    height: 500px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+.Funcionarios{
+    display: flex;
+    position: absolute;
+    background-color: #adadad;
+    font-size: 24px;
+    text-align: justify center;
+    height: 500px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 20%;
+}
